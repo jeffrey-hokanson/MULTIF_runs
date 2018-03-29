@@ -3,12 +3,12 @@ import matplotlib.pyplot as plt
 
 from sequoia import *
 
-levels = [0,5]
+levels = [0,2,5]
 index = [0,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]
 
 Ys = []
 for level in levels:
-	Ys.append(np.loadtxt('sweep1_level%d_v15.output' % level ))
+	Ys.append(np.loadtxt('sweep1_level%d_v16.output' % level ))
 
 
 for k in range(0,10):
@@ -22,7 +22,8 @@ for k in range(0,10):
 		if i == 3:
 			ax.set_ylim(bottom = 0, top = 50e3)
 		#ax.set_ylim(bottom = np.min(Ys[0][I,i]), top = np.max(Ys[0][I,i]))
-	
+		ax.get_xaxis().set_ticks([])	
+
 	fig.tight_layout(rect = [0,0.15,1,1])
 	fhandles, flabels = axes[0,0].get_legend_handles_labels()
 	plt.legend(fhandles, [level_names[i] for i in levels],
