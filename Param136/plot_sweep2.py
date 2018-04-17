@@ -20,7 +20,8 @@ for k in range(0,50):
 		for Y, level in zip(Ys, levels):
 			ax.plot(Y[I,i], '.', label = level_names[level], markersize = 3 )
 		if i == 3:
-			ax.set_ylim(bottom = 0, top = 60e3)
+			pass
+			#ax.set_ylim(bottom = 0, top = 60e3)
 		#ax.set_ylim(bottom = np.min(Ys[0][I,i]), top = np.max(Ys[0][I,i]))
 		ax.get_xaxis().set_ticks([])	
 
@@ -29,5 +30,6 @@ for k in range(0,50):
 	plt.legend(fhandles, [level_names[i] for i in levels],
 			loc='upper right', bbox_to_anchor=(0.5, -0.3))
 
-	fig.savefig('sweep2_%d.png' % k, dpi = 300)
+	fig.savefig('sweep2_%02d.png' % k, dpi = 300)
 	plt.close(fig)
+	print "sweep2 %d done" % k
