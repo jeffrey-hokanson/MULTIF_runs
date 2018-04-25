@@ -3,19 +3,19 @@ import matplotlib.pyplot as plt
 import itertools
 from sequoia import *
 
-levels = [0,2,5,11]
+levels = [0,2,5]
 index = [0,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]
 
 kwargs = itertools.cycle( (
 	{'marker': '.', 'markersize': 4},
 	{'marker': '+', 'markersize': 4},
 	{'marker': 'x', 'markersize': 4},
-	{'marker': 'o', 'markersize': 4, 'mfc' : 'none'}))
+	{'marker': 'o', 'markersize': 4, 'mfc' : 'none'})[0:len(levels)])
 
 
 Ys = []
 for level in levels:
-	Ys.append(np.loadtxt('sweep3_level%d_v19.output' % level ))
+	Ys.append(np.loadtxt('sweep3_level%d_v20.output' % level ))
 
 
 for k in range(0,50):
