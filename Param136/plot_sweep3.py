@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import itertools
 from sequoia import *
 
-levels = [0,2,5]
+levels = [2,3,4]
 index = [0,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]
 
 kwargs = itertools.cycle( (
@@ -15,7 +15,7 @@ kwargs = itertools.cycle( (
 
 Ys = []
 for level in levels:
-	Ys.append(np.loadtxt('sweep3_level%d_v20.output' % level ))
+	Ys.append(np.loadtxt('sweep3_level%d_v21.output' % level ))
 
 
 for k in range(0,50):
