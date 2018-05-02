@@ -14,33 +14,60 @@ level_names = ["NONIDEALNOZZLE,1e-8,AEROTHERMOSTRUCTURAL,LINEAR,0.5",
 		"RANS,3D,FINE,AEROTHERMOSTRUCTURAL,LINEAR,0.5"
 	]
 
-qoi_names = ['Mass',
-		 'MASS_WALL_ONLY',
-		 'VOLUME', # 2
-		 'Thrust', 
-		 'Thermal temp failure', # 4
-		 'Load inside temp failure',
-		 'Load middle temp failure', # 6
-		 'Load outside temp failure',
-		 'Thermal layer failure', # 8
-		 'Load inside failure',
-		 'Load middle failure', # 10
-		 'Load outside failure',
-		 'Stringer failure', # 12
-		 'Baffle 1 failure',
-		 'Baffle 2 failure',# 14
-		 'Baffle 3 failure',
-		 'Baffle 4 failure',# 16
-		 'Baffle 5 failure',
-		 'THERMAL_LAYER_TEMP_RATIO',# 18
-		 'LOAD_LAYER_INSIDE_TEMP_RATIO',
-		 'LOAD_LAYER_MIDDLE_TEMP_RATIO',# 20
-		 'LOAD_LAYER_OUTSIDE_TEMP_RATIO',
-		 'THERMAL_LAYER_FAILURE_CRITERIA',# 22
-		 'LOAD_LAYER_INSIDE_FAILURE_CRITERIA',
-		 'LOAD_LAYER_MIDDLE_FAILURE_CRITERIA',# 24
-		 'LOAD_LAYER_OUTSIDE_FAILURE_CRITERIA',
-		 'WALL_PRESSURE',# 26
-		 'PRESSURE',
-		 'VELOCITY' # 28
-		]
+qoi_names = [
+	'SU2 Residual',
+	'Mass',
+	'Wall Mass', # 2
+	'Volume',
+	'Thrust', # 4
+	'Thermal Temp. (Max)',
+	'Inside Load Temp. (Max)', #6 
+	'Middle Load Temp. (Max)',
+	'Outside Load Temp. (Max)', #8
+	'Outside Load Temp. (Max)',
+	'Thermal Struct. (Max)', #10
+	'Inside Load Struct. (Max)',
+	'Middle Load Struct. (Max)', #12
+	'Outside Load Struct. (Max)',
+	'Stringers Struct. (Max)', # 14
+	'Baffle 1 Struct. (Max)',
+	'Baffle 2 Struct. (Max)', #16
+	'Baffle 3 Struct. (Max)',
+	'Baffle 4 Struct. (Max)', #18 
+	'Baffle 5 Struct. (Max)',
+	'Thermal Temp. (PN)', #20 -----
+	'Inside Load Temp. (PN)',
+	'Middle Load Temp. (PN)', #22
+	'Outside Load Temp. (PN)',
+	'Outside Load Temp. (PN)', #24
+	'Thermal Struct. (PN)',
+	'Inside Load Struct. (PN)', #26
+	'Middle Load Struct. (PN)',
+	'Outside Load Struct. (PN)', #28
+	'Stringers Struct. (PN)',
+	'Baffle 1 Struct. (PN)', # 30
+	'Baffle 2 Struct. (PN)',
+	'Baffle 3 Struct. (PN)', # 32
+	'Baffle 4 Struct. (PN)',
+	'Baffle 5 Struct. (PN)', #34 
+	'Thermal Temp. (KS)', # 35 --------
+	'Inside Load Temp. (KS)', #36
+	'Middle Load Temp. (KS)',
+	'Outside Load Temp. (KS)', #38
+	'Outside Load Temp. (KS)', 
+	'Thermal Struct. (KS)', #40 
+	'Inside Load Struct. (KS)',
+	'Middle Load Struct. (KS)', #42
+	'Outside Load Struct. (KS)',
+	'Stringers Struct. (KS)', # 44
+	'Baffle 1 Struct. (KS)',
+	'Baffle 2 Struct. (KS)', #46
+	'Baffle 3 Struct. (KS)',
+	'Baffle 4 Struct. (KS)', #48
+	'Baffle 5 Struct. (KS)',
+	]
+
+
+
+
+
