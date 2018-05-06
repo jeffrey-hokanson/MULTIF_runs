@@ -12,3 +12,5 @@ v17     |     7.2.0    | 3.3.4 | 3.0.6| 5415d6f9 | 8a3094a3 | 8b238886 |
 v18     |     7.2.0    | 3.3.4 | 3.0.6| 5415d6f9 | 8a3094a3 | 42c948d9 (feature_ellipical) |
 v19     |     7.2.0    | 3.3.4 | 3.0.6| 5415d6f9 | 8a3094a3 | e41ca5f2 (feature_ellipical) |
 v20     |     7.2.0    | 3.3.4 | 3.0.6| 5415d6f9 | 8a3094a3 | dd19252d (feature_ellipical) |
+v21     |     7.2.0    | 3.3.4 | 3.0.6| 5415d6f9 | 8a3094a3 | 844e6937 (feature_ellipical) |
+v22     |     7.2.0    | 3.3.4 | 3.0.6| 5415d6f9 | 8a3094a3 | 061f7b7e (feature_ellipical) |
