@@ -24,7 +24,7 @@ for level in levels:
 print Ys[0].shape
 print index
 
-for k in range(0,50):
+for k in range(0,1):
 	I = np.arange(20*k, 20*(k+1))
 
 	fig, axes = plt.subplots(4,4, figsize = (9,9))
