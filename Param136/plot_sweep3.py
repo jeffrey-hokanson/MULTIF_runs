@@ -3,7 +3,9 @@ import matplotlib.pyplot as plt
 import itertools
 from sequoia import *
 
-levels = [0,2,5]
+levels = [0,2,5,11]
+#levels = [2,3,4]
+#levels = [5,6,7]
 index = [1,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
 
 
@@ -24,7 +26,7 @@ for level in levels:
 print Ys[0].shape
 print index
 
-for k in range(0,50):
+for k in range(0,1):
 	I = np.arange(20*k, 20*(k+1))
 
 	fig, axes = plt.subplots(4,4, figsize = (9,9))
