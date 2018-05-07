@@ -40,7 +40,7 @@ The numbers above denote the level in MULTI-F:
 level | description | min runtime (1 CPU) | max runtime (1 CPU) |
 ------|-------------|---------------------|---------------------|
 0     | 1D Linear   | 2.5 minutes         | 4 minutes           |
-1     | 1D Nonlinear|                     | 4 minutes           |
+1     | 1D Nonlinear| 2.7 minutes         | 4 minutes           |
 2     | 2D Euler Coarse   | 3 minutes   |  5 minutes          |
 3     | 2D Euler Medium   | 5 minutes   | 8 minutes  |
 4     | 2D Euler Fine     | 10 minutes  | 14 minutes |
