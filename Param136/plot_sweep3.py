@@ -19,12 +19,12 @@ kwargs = itertools.cycle( (
 
 Ys = []
 for level in levels:
-	Ys.append(np.loadtxt('sweep3_level%d_v22.output' % level ))
+	Ys.append(np.loadtxt('sweep3_level%d_v24.output' % level ))
 
 print Ys[0].shape
 print index
 
-for k in range(0,1):
+for k in range(0,50):
 	I = np.arange(20*k, 20*(k+1))
 
 	fig, axes = plt.subplots(4,4, figsize = (9,9))
