@@ -4,8 +4,6 @@ import itertools
 from sequoia import *
 
 levels = [0,2,5,11]
-#levels = [2,3,4]
-#levels = [5,6,7]
 index = [1,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
 
 
@@ -21,7 +19,7 @@ kwargs = itertools.cycle( (
 
 Ys = []
 for level in levels:
-	Ys.append(np.loadtxt('sweep3_level%d_v22.output' % level ))
+	Ys.append(np.loadtxt('sweep3_level%d_v24.output' % level ))
 
 print Ys[0].shape
 print index
@@ -38,7 +36,11 @@ for k in range(0,50):
 			pass
 			#ax.set_ylim(bottom = 0, top = 60e3)
 		#ax.set_ylim(bottom = np.min(Ys[0][I,i]), top = np.max(Ys[0][I,i]))
-		ax.get_xaxis().set_ticks([])	
+		ax.get_xaxis().set_ticks([])
+		bottom = min([np.nanmin(Y[:,i]) for Y in Ys])
+		bottom = max([bottom, 0]) 
+		top    = max([np.nanmax(Y[:,i]) for Y in Ys])
+		ax.set_ylim(bottom = bottom, top = top)
 
 	fig.tight_layout(rect = [0,0.15,1,1])
 	fhandles, flabels = axes[0,0].get_legend_handles_labels()

@@ -37,15 +37,15 @@ The numbers above denote the level in MULTI-F:
 
 ## Computational Cost of Each Level
 
-level | description | max runtime (1 CPU) |
-------|-------------|---------------------|
-0     | 1D Linear   | 4 minutes           |
-1     | 1D Nonlinear| 4 minutes           |
-2     | 2D Euler Coarse   | 5 minutes          |
-3     | 2D Euler Medium   | 8 minutes  |
-4     | 2D Euler Fine     | 14 minutes |
-5     | 3D Euler Coarse   | 71 minutes |
-6     | 3D Euler Medium   | 3.1 hours  |
-7     | 3D Euler Fine     | 9.1 hours  |
-11    | 3D RANS Coarse    | 24.9 hours |
-13    | 3D RANS Fine      | 108 hours (4.5 days) |
+level | description | min runtime (1 CPU) | max runtime (1 CPU) |
+------|-------------|---------------------|---------------------|
+0     | 1D Linear   | 2.5 minutes         | 4 minutes           |
+1     | 1D Nonlinear| 2.7 minutes         | 4 minutes           |
+2     | 2D Euler Coarse   | 3 minutes   |  5 minutes          |
+3     | 2D Euler Medium   | 5 minutes   | 8 minutes  |
+4     | 2D Euler Fine     | 10 minutes  | 14 minutes |
+5     | 3D Euler Coarse   | 15 minutes  | 71 minutes |
+6     | 3D Euler Medium   | 40 minutes  | 3.1 hours  |
+7     | 3D Euler Fine     | 2.2 hours   | 9.1 hours  |
+11    | 3D RANS Coarse    | 16 hours    | 24.9 hours |
+13    | 3D RANS Fine      | 90 hours (3.7 days) | 108 hours (4.5 days) |
