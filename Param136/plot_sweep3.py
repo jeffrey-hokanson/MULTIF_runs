@@ -36,7 +36,11 @@ for k in range(0,50):
 			pass
 			#ax.set_ylim(bottom = 0, top = 60e3)
 		#ax.set_ylim(bottom = np.min(Ys[0][I,i]), top = np.max(Ys[0][I,i]))
-		ax.get_xaxis().set_ticks([])	
+		ax.get_xaxis().set_ticks([])
+		bottom = min([np.nanmin(Y[:,i]) for Y in Ys])
+		bottom = max([bottom, 0]) 
+		top    = max([np.nanmax(Y[:,i]) for Y in Ys])
+		ax.set_ylim(bottom = bottom, top = top)
 
 	fig.tight_layout(rect = [0,0.15,1,1])
 	fhandles, flabels = axes[0,0].get_legend_handles_labels()
