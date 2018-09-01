@@ -17,3 +17,8 @@ v21     |     7.2.0    | 3.3.4 | 3.0.6| 5415d6f9 | 8a3094a3 | 844e6937 (feature_
 v22     |     7.2.0    | 3.3.4 | 3.0.6| 5415d6f9 | 8a3094a3 | 061f7b7e (feature_ellipical) |
 v23     |     7.2.0    | 3.3.4 | 3.0.6| 5415d6f9 | 8a3094a3 | 544440a8 (feature_ellipical) |
 v24     |     7.2.0    | 3.3.4 | 3.0.6| 5415d6f9 | 8a3094a3 | 22135631 (feature_ellipical) |
+v25     |     7.2.0    | 3.3.4 | 3.0.6| 5415d6f9 | 8a3094a3 | 55aefe21 (feature_ellipical) |
+
+
+Note version 25 is a bugfix for SST support for version 24 and yields identical outputs
+(with the exception of the SU2_CONVERGENCE output)
