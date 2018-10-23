@@ -54,3 +54,20 @@ for example, `stretch2c_l0_v13` samples ridges built from level 0  version 13 da
 * extend: a greedy approach that attempts to sample each of the ridge directions with an equal number of points using Mitchell's best candidate.  Similar to stretch, letters denote samples built by refining the domain; e.g., `extend1c_l0_v13` was built using level 0 version 13 data for `uniform1`, `extend1a_l0_v13`, and `extend1b_l0_v13`.
 
 
+Computational Effort
+--------------------
+In addition to the input output mappings, I've also recorded the total run time for each simulation I've performed.
+In this directory is a file named `total_runtime.txt` that contains a record of every simulation run since November 2017.
+Each row describes a single run of MULTI-F with each column encoding
+
+* Total run time in seconds
+* Basename of file run on (e.g., if run on `baseline.input` the row lists `baseline`)
+* The md5sum has of this input file 
+* The level of MULTI-F being run 
+* The line number in the input file being run
+* The data and time of completion
+* (optional) the version of MULTIF being run (e.g., v24)
+* (optional) the SST perturbation being run (e.g., false or SSTC1)
+
+
+
